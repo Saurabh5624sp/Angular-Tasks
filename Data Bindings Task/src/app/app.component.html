@@ -1,0 +1,25 @@
+<div class="card">
+  <h2>{{ name }}</h2>
+  <p>{{ bio }}</p>
+  <p>{{ location }}</p>
+</div>
+
+
+<br>
+<img [src]="Producturl" alt="prouct logo" width="300">
+
+<div class="loginform">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username" />
+  <br>
+  <input type="password" placeholder="Password"/>
+  <br>
+  <button (click)="onLogin()">Login</button>
+</div>
+
+<div class="formcontainer">
+  <h2>Real-Time Form</h2>
+  <input type="email" placeholder="Email" [(ngModel)]="user.email" />
+  <input type="password" placeholder="Password" [(ngModel)]="user.password" />
+  <button (click)="onSubmit()">Submit</button>
+</div>
